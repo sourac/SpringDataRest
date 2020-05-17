@@ -9,6 +9,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.NotNull;
 
 import com.atul.learning.core.BaseEntity;
 import com.atul.learning.review.Review;
@@ -22,6 +23,7 @@ import com.atul.learning.review.Review;
 @Entity
 public class Course extends BaseEntity {
 
+	
 	private String title;
 	private String url;
 

@@ -4,14 +4,11 @@
 package com.atul.learning.review;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.ManyToOne;
-
-import org.springframework.data.annotation.Id;
 
 import com.atul.learning.core.BaseEntity;
 import com.atul.learning.course.Course;
+import com.atul.learning.user.User;
 
 /**
  * @author Atul Sharma
@@ -36,6 +33,17 @@ public class Review extends BaseEntity {
 
 	@ManyToOne
 	private Course course;
+	
+	@ManyToOne
+	private User reviewer;
+
+	public User getReviewer() {
+		return reviewer;
+	}
+
+	public void setReviewer(User reviewer) {
+		this.reviewer = reviewer;
+	}
 
 	public Course getCourse() {
 		return course;
