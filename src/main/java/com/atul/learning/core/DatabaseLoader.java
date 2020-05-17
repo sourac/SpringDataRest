@@ -51,7 +51,8 @@ public class DatabaseLoader implements ApplicationRunner {
 				"Java 14",
 				"Scala",
 				"Groovy",
-				"Hibernate"
+				"Hibernate",
+				"Kotlin"
 		};
 		
 		
